@@ -1,0 +1,93 @@
+
+.flashcard {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow-wrap: anywhere;
+}
+
+.flashcard h2 {
+    margin-top: 0;
+    color: #1a73e8;
+    text-transform: capitalize;
+}
+
+.flashcard p {
+    white-space: pre-wrap;
+    line-height: 1.7;
+    color: #333;
+}
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: #f5f7fb;
+    color: #202124;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+h1 {
+    color: #1a73e8;
+}
+
+.subtitle {
+    color: #5f6368;
+}
+
+.input-section {
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+}
+
+#wordInput {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#generateBtn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #1a73e8;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#generateBtn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.flashcard {
+    background: white;
+    border: 1px solid #e0e3eb;
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    overflow-wrap: anywhere;
+}
+
+.flashcard h2 {
+    margin-top: 0;
+    color: #1a73e8;
+    text-transform: capitalize;
+}
+
+.flashcard p {
+    white-space: pre-wrap;
+    line-height: 1.8;
+    color: #3c4043;
+}
