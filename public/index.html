@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google AI Smart Flashcard</title>
-    <!-- Google Material Icons & Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b1220"><meta name="description" content="Tạo flashcard từ vựng với Gemini AI">
+<title>SmartFlashcard — Learn smarter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Google AI Smart Flashcard</h1>
-        <p class="subtitle">Học từ vựng thông minh với trợ lý AI và Cloud Database</p>
-
-        <!-- Khu vực Input -->
-        <div class="input-section">
-            <input type="text" id="wordInput" placeholder="Nhập từ vựng tiếng Anh (VD: resilient)...">
-            <button id="generateBtn">
-                <span id="btnText">Generate with AI</span>
-                <span id="loadingSpinner" class="hidden">Đang xử lý...</span>
-            </button>
-        </div>
-
-        <!-- Khu vực hiển thị danh sách Flashcard -->
-        <div id="flashcardContainer" class="flashcard-grid">
-            <!-- Các thẻ Flashcard sẽ được render tự động ở đây bằng JavaScript -->
-        </div>
-    </div>
-
-    <!-- File Logic JavaScript -->
-    <script src="app.js"></script>
-</body>
-</html>
+<body><main class="shell">
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">S</span><span>Smart<span class="brand-accent">Flashcard</span></span></a><span class="status-pill"><span class="status-dot"></span> Gemini AI powered</span></header>
+<section class="hero"><p class="eyebrow">YOUR PERSONAL AI STUDY PARTNER</p><h1>Words that <span>stick.</span></h1><p class="hero-copy">Biến từ vựng tiếng Anh thành flashcard dễ hiểu, dễ nhớ — chỉ trong vài giây.</p></section>
+<section class="generator panel"><label for="wordInput">Từ vựng tiếng Anh</label><div class="input-row"><div class="input-wrap"><span class="search-icon">⌕</span><input id="wordInput" type="text" maxlength="100" placeholder="Ví dụ: resilient, ubiquitous..." autocomplete="off"></div><button id="generateBtn" type="button"><span id="btnText">Tạo flashcard</span><span id="loadingSpinner" class="hidden">Đang tạo…</span><span aria-hidden="true">↗</span></button></div><div class="helper-row"><span>✦ AI tạo định nghĩa, nghĩa tiếng Việt và ví dụ</span><span id="feedback" role="status" aria-live="polite"></span></div></section>
+<section class="results-section"><div class="section-heading"><div><p class="eyebrow">YOUR STUDY SPACE</p><h2>Flashcards <span id="cardCount" class="count">0</span></h2></div><button id="clearHistoryBtn" class="text-button hidden" type="button">Xóa lịch sử</button></div><p id="emptyState" class="empty-state"><span class="empty-icon">✧</span><strong>Chưa có flashcard nào</strong><span>Nhập một từ tiếng Anh ở trên để bắt đầu học.</span></p><div id="flashcardContainer" class="flashcard-grid"></div></section>
+<footer><span>Built with Gemini API & Firebase Hosting</span><span>Learn a little every day.</span></footer>
+</main><script src="app.js"></script></body></html>
