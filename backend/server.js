@@ -36,7 +36,7 @@ async function generateWithRetry(word) {
     for (let attempt = 0; ; attempt++) {
         try {
             return await ai.models.generateContent({
-                model: "gemini-3.8-flash",
+                model: "gemini-3.6-flash",
                 contents: `Create an English vocabulary flashcard for the word "${word}".
 
 Return the following sections with these exact labels:
